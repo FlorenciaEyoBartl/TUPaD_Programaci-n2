@@ -32,7 +32,7 @@ public class Main_U {
         
         System.out.println("\n" + "=".repeat(50));
         
-        // 4. Asignar profesores a cursos
+        // Asignar profesores a cursos
         System.out.println("ASIGNANDO PROFESORES A CURSOS:");
         universidad.asignarProfesorACurso("MAT101", "P001");
         universidad.asignarProfesorACurso("MAT102", "P001");
@@ -42,7 +42,7 @@ public class Main_U {
         
         System.out.println("\n" + "=".repeat(50));
         
-        // 5. Listar cursos con profesor y profesores con sus cursos
+        // Listar cursos con profesor y profesores con sus cursos
         System.out.println("LISTA DE CURSOS:");
         universidad.listarCursos();
         
@@ -51,7 +51,7 @@ public class Main_U {
         
         System.out.println("\n" + "=".repeat(50));
         
-        // 6. Cambiar profesor de un curso y verificar sincronización
+        // Cambiar profesor de un curso y verificar sincronización
         System.out.println("CAMBIANDO PROFESOR DE CURSO:");
         System.out.println("ANTES del cambio:");
         curso1.mostrarInfo();

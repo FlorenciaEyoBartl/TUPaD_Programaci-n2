@@ -19,7 +19,7 @@ public class Curso {
         setProfesor(profesor); // Usar setProfesor para sincronización
     }
     
-    // SETTER CRÍTICO - Sincronización bidireccional
+    // Sincronización bidireccional
     public void setProfesor(Profesor nuevoProfesor) {
         // Si ya tenía un profesor, quitarme de su lista
         if (this.profesor != null && this.profesor != nuevoProfesor) {

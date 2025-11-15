@@ -31,7 +31,7 @@ public class Universidad {
         }
     }
     
-    // Asignar profesor a curso (MÉTODO IMPORTANTE)
+    // Asignar profesor a curso 
     public boolean asignarProfesorACurso(String codigoCurso, String idProfesor) {
         Curso curso = buscarCursoPorCodigo(codigoCurso);
         Profesor profesor = buscarProfesorPorId(idProfesor);
@@ -65,7 +65,7 @@ public class Universidad {
         }
     }
     
-    // 5. Listar cursos
+    // Listar cursos
     public void listarCursos() {
         if (cursos.isEmpty()) {
             System.out.println("No hay cursos en la universidad.");
@@ -78,7 +78,7 @@ public class Universidad {
         }
     }
     
-    // 6. Buscar profesor por ID
+    // Buscar profesor por ID
     public Profesor buscarProfesorPorId(String id) {
         for (Profesor p : profesores) {
             if (p.getId().equals(id)) {
@@ -88,7 +88,7 @@ public class Universidad {
         return null;
     }
     
-    // 7. Buscar curso por código
+    // Buscar curso por código
     public Curso buscarCursoPorCodigo(String codigo) {
         for (Curso c : cursos) {
             if (c.getCodigo().equals(codigo)) {
@@ -98,7 +98,7 @@ public class Universidad {
         return null;
     }
     
-    // 8. Eliminar curso
+    // Eliminar curso
     public boolean eliminarCurso(String codigo) {
         Curso curso = buscarCursoPorCodigo(codigo);
         if (curso != null) {
@@ -114,7 +114,7 @@ public class Universidad {
         return false;
     }
     
-    // 9. Eliminar profesor
+    // Eliminar profesor
     public boolean eliminarProfesor(String id) {
         Profesor profesor = buscarProfesorPorId(id);
         if (profesor != null) {
@@ -130,7 +130,7 @@ public class Universidad {
         return false;
     }
     
-    // 10. Reporte: cantidad de cursos por profesor
+    // Reporte: cantidad de cursos por profesor
     public void mostrarReporteCursosPorProfesor() {
         System.out.println("=== REPORTE: CURSOS POR PROFESOR ===");
         for (Profesor profesor : profesores) {
